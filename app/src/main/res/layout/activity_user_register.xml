@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/green_button"
+        android:onClick="register"
+        android:text="注册"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditText_password"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/EditText_validation"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/EditText_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/validation"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/EditText_email"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/EditText_email"
+        android:onClick="send_email"
+        android:text="发送验证码"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditText_user_name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/EditText_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/EditText_email"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/EditText_validation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:ems="5"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/password_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/EditText_password"
+        android:layout_toStartOf="@+id/EditText_password"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="密码" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText_validation"
+        android:layout_toStartOf="@+id/EditText_validation"
+        android:layout_marginEnd="0dp"
+        android:text="验证码"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/EditText_email"
+        android:layout_toStartOf="@+id/EditText_email"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="邮箱" />
+
+    <TextView
+        android:id="@+id/user_name_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/EditText_user_name"
+        android:layout_toStartOf="@+id/EditText_user_name"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="用户名" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="#F44336"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/EditText_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/redfox" />
+
+</RelativeLayout>

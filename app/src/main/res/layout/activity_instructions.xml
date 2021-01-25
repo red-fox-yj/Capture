@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".instructionActivity">
+
+    <ScrollView
+        android:id="@+id/vertical_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/darkcyan"
+                android:textSize="25dp"
+                android:text="目录" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/darkcyan"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="———软件介绍\n———使用指南\n———关于我们\n———更新日志"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkcyan"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="软件介绍" />
+
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="算法杀熟是指许多商业平台采用动态定价方案，针对不同消费者的消费水平同一产品显示出不同的价格等现象，这根本上是一种价格歧视行为。我们的实践小组基于此，研究当前大数据时代的“算法杀熟”现象，利用问卷调查、平台调研、设计软件监控等手段，分析和研究目前市场的“大数据杀熟”情况、用户认识程度及态度等。希望能经过调查分析了解到大数据杀熟现象形成的原因、背后的根源并提出相应解决出路。\n 本应用在用户使用某些消费类软件的时候，于后台进行监控，记录某些产品价格信息，和现有数据分析比对，对于出现价格差异的状况，即检测到该软件出现“大数据杀熟”现象，则将相关情况进行反馈。"
+                android:textSize="20dp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkcyan"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="使用指南(重要)" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/caputure_logo" />
+
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="（1）本应用需要用户手动打开安卓辅助功能。具体操作步骤为：设置->辅助功能->无障碍->(找到应用)Capture->打开。或者也可以点击应用首页右上角箭头直接跳转到设置界面进行设置。作者在开发时选择的测试机为华为nova 6(5G)，不同的手机可能存在差别，但基本步骤大致相同，打开了Capture辅助功能即可。\n\n（2）开启应用之后可以按home键返回桌面开启捕捉，亦可点击中间购物车按钮返回桌面，切记保持应用后台运行才可以正常进行捕捉。\n\n（3）本应用基于淘宝版本9.10.0开发，不同版本可能会发生捕获失败的问题，详情请看更新日志。\n\n（4）捕获记录存储在：SD卡根目录/DataDet/log.txt。"
+                android:textSize="20dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkcyan"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="关于我们" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="组织：武汉大学计算机学院线上调研大数据时代“算法杀熟”现象及对策研究实践队\n作者：Red-Fox-yj\n联系作者：red-fox-yj@outlook.com"
+                android:textSize="20dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkcyan"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="更新日志" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="最后更新时间：2020/8/9\n版本：1.1.2\n更新说明：修复了发送数据重复的问题；新增辅助功能快捷按钮；优先适配淘宝版本9.10.0；由于商品原价捕获可信性比较低，已经暂时删除这一捕获项。"
+                android:textSize="20dp"
+                android:gravity="start|top"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

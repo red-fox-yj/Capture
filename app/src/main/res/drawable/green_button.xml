@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--设置按钮点击时，点击后，按钮这2种状态的改变和设置-->
+    <!--按钮按下时的设置  -->
+    <item android:state_pressed="true" android:drawable="@drawable/button_down"></item>
+    <!--按钮松开时的设置  -->
+    <item android:state_pressed="false" android:drawable="@drawable/buttob_up"  ></item>
+</selector>
