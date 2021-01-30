@@ -163,14 +163,14 @@ public class UserRegisterActivity extends AppCompatActivity {
     }
 
     /**
-     * 发送验证码响应函数
+     * 发送邮箱验证码响应函数
      */
     public void send_email(View v){
         if (client != null && client.isOpen()) {//服务器连接成功
             if(isEmpty(email)){
                 status.setText("邮箱不能为空");
             }else{
-                isrepeat("email",email.getText().toString());
+                DBisrepeat("email",email.getText().toString());
         }
         }else {
             status.setText("服务器连接失败");
@@ -191,7 +191,7 @@ public class UserRegisterActivity extends AppCompatActivity {
             }else if(isEmpty(password)){
                 password.setText("密码不能为空");
             }else{
-                isrepeat("username",username.getText().toString());
+                DBisrepeat("username",username.getText().toString());
             }
         }else {
             status.setText("服务器连接失败");
@@ -261,7 +261,7 @@ public class UserRegisterActivity extends AppCompatActivity {
     /**
      * 连接数据库判断注册信息是否重复
      */
-    public void isrepeat(final String list_name, final String value) {
+    public void DBisrepeat(final String list_name, final String value) {
         Thread mythread=new Thread(){
             @Override
             public void run() {

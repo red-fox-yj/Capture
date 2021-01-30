@@ -22,7 +22,6 @@ public class MyAccessibility extends AccessibilityService {
     String price_now = "";//保存现价
     public List<String> event_list = new ArrayList<String>();
 
-
     @Override
     protected void onServiceConnected() {
     }
