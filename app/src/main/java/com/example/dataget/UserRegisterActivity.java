@@ -222,11 +222,6 @@ public class UserRegisterActivity extends AppCompatActivity {
         System.out.println("邮箱验证");
         Map<String,Object> map=new HashMap<>();
         map.put("type","validation");
-        map.put("email",email.getText().toString());
-        //map转string
-        Gson gson = new Gson();
-        String map_string = gson.toJson(map);
-        client.send(map_string);
         //使按钮无效
         button_Handler.sendEmptyMessage(3);
         //开启子线程倒计时
@@ -236,10 +231,15 @@ public class UserRegisterActivity extends AppCompatActivity {
                 while (num>0){
                     try {
                         Thread.sleep(1000);
-                    } catch (InterruptedException e) {
+
+                        map.put("email",email.getText().toString());
+        //map转string
+        Gson gson = new Gson();
+        String map_string = gson.toJson(map);
+        client.send(map_string);     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    num=num-1;
+                                    num=num-1;
                     //按钮文本倒计时
                     button_Handler.sendEmptyMessage(2);
                 }
