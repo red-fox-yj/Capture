@@ -26,3 +26,9 @@
 - 用户注册登录系统的构建（已完成）
 - 淘宝浏览记录上传（待完成）
 - 后端数据杀熟的分析（待完成）
+
+
+
+Andriod客户端链接：[点我](https://github.com/red-fox-yj/Capture)
+
+python服务端链接：[点我](https://github.com/red-fox-yj/Capture_server)
